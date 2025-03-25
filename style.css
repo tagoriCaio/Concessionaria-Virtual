@@ -56,7 +56,7 @@ section .list {
 section .list::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 48.5%;
   height: 200px;
   width: 100%;
   border-top: 1px solid #fff;
@@ -95,6 +95,7 @@ section .list .item .content {
 
 section .list .item .content .information {
   font-weight: bold;
+  font-size: 1.2em;
 }
 
 section .list .item .content h2 {
@@ -105,15 +106,15 @@ section .list .item .content h2 {
 
 section .list .item .content .description {
   color: #dddddd;
-  font-size: 11px;
+  font-size: 13px;
   text-align: right;
   max-width: 400px;
 }
 
 section .list .item .content button {
   border-radius: 30px;
-  height: 35px;
-  width: 120px;
+  height: 40px;
+  width: 130px;
   text-transform: uppercase;
   border: 2px solid #791fd3;
   background-color: #beff1b;
