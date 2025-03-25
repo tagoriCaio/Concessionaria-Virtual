@@ -1,0 +1,62 @@
+.list {
+    --calculation: 1;
+}
+
+section .list .item {
+    transform: translateX(calc(100vw * var(--calculation)));
+    transition: 0.5s;
+    opacity: 0;
+}
+
+section .list .item .car-img img {
+  transform: rotate(0);
+  transition: 0.5s;
+  transition-delay: 0.3s;
+}
+
+.content .information, h2, .description, .infoButton {
+    transform: translateX(calc(200px * var(--calculation)));
+    transition: 0.7s;
+    transition-delay: 0.3s;
+    opacity: 0;
+}
+
+.content h2 { 
+    transition-delay: 0.5s; 
+}
+
+.content .description {
+    transition-delay: 0.7s;
+}
+
+.content .infoButton {
+    transition-delay: 0.9s;
+}
+
+section .list .activeItem {
+    transform: translateX(0vw);
+    opacity: 1;
+}
+
+section .list .activeItem .car-img img {
+    transform: rotate(-20deg);
+}
+
+.activeItem .content .information,
+.activeItem .content h2,
+.activeItem .content .description,
+.activeItem .content .infoButton {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.car-img::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 150%;
+    left: 50px;
+    filter: blur(40px);
+    background-color: #000;
+}
